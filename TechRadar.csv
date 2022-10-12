@@ -3,8 +3,8 @@ Automated functional tests,adopt,techniques,FALSE,"prin intermediul behat, phant
 Static code analysis,adopt,techniques,FALSE,
 Infrastructure as code,adopt,techniques,FALSE,"prin intermediul ansible, a mediilor de virtualizare si jenkins"
 Continuous integration,adopt,techniques,FALSE,
-Static security testing,trial,techniques,TRUE,Using SensioLabs Security Checker for PHP apps
-Unit Testing,trial,techniques,TRUE,
+Unit Testing,adopt,techniques,FALSE,
+Static security testing,adopt,techniques,TRUE,Using SensioLabs Security Checker for PHP apps
 Microservices,trial,techniques,TRUE,
 Serverless Apps,trial,techniques,TRUE,
 Let's Encrypt,adopt,tools,FALSE,"Let’s Encrypt is a free, automated, and open certificate authority (CA), run for the public’s benefit."
@@ -15,13 +15,13 @@ GitLab,adopt,tools,FALSE,
 AWS Code Deploy,adopt,tools,FALSE,Will be used for AWS-based projects
 Webpack,adopt,tools,FALSE,Webpack is an open-source JavaScript module bundler. Webpack takes modules with dependencies and generates static assets representing those modules. It takes the dependencies and generates a dependency graph allowing web developers to use a modular approach for their web application development purposes.
 Yarn,adopt,tools,FALSE,
-Varnish,adopt,tools,TRUE,Will be used mainly on Magento projects
+Varnish,adopt,tools,FALSE,Will be used mainly on Magento projects
 npm,adopt,tools,FALSE,
-GitLab CI/CD,adopt,tools,TRUE,
-Google Data Studio,adopt,tools,TRUE,
-Blackfire.io,trial,tools,TRUE,
+GitLab CI/CD,adopt,tools,FALSE,
+Google Data Studio,adopt,tools,FALSE,
+Blackfire.io,trial,tools,FALSE,
 Tideways,trial,tools,FALSE,
-Azure DevOps,trial,tools,TRUE,"Former Visual Studio Team Services, an Azure-based CI, Git hosting, project management and test planning tool."
+Azure DevOps,trial,tools,FALSE,"Former Visual Studio Team Services, an Azure-based CI, Git hosting, project management and test planning tool."
 PowerBI,assess,tools,FALSE,
 Jenkins,hold,tools,FALSE,
 Gulp,hold,tools,FALSE,"Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development. 
@@ -32,12 +32,13 @@ Wordpress,adopt,platforms,FALSE,"Wordpress is extremely efficient for building s
 RabbitMQ,adopt,platforms,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
 Amazon Web Services,adopt,platforms,FALSE,
 Microsoft Azure,adopt,platforms,FALSE,
-Google Cloud Platform,adopt,platforms,TRUE,
+Google Cloud Platform,adopt,platforms,FALSE,
 Microsoft SQL Server,adopt,platforms,FALSE,
 Redis,adopt,platforms,FALSE,
 Kubernetes,adopt,platforms,TRUE,
-Docker,adopt,platforms,TRUE,Docker is a computer program that performs operating-system-level virtualization also known as containerization.
+Docker,adopt,platforms,FALSE,Docker is a computer program that performs operating-system-level virtualization also known as containerization.
 VTEX,trial,platforms,TRUE,
+Strapi,trial,platforms,TRUE,
 WooCommerce,assess,platforms,FALSE,WooCommerce is an open source e-commerce plugin for WordPress. It is designed for small to large-sized online merchants using WordPress.
 Docker Swarm,hold,platforms,FALSE,
 Vagrant,hold,platforms,FALSE,"All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
@@ -52,18 +53,19 @@ Shopify,hold,platforms,FALSE,Shopify is a SaaS e-commerce solution. You can deve
 Microsoft Sharepoint,hold,platforms,FALSE,
 ASP.NET Core,adopt,languages & frameworks,FALSE,"ASP.NET Core/5 's portability, containerization support and developer experience make it the most loved web framework according to Stack Overflow's Developer Survey 2021. It is a technology we will not only invest in, but focus on intensively throughout 2021 and 2022 to expand its reach within Zitec."
 ECMAScript 2017 (ES6),adopt,languages & frameworks,FALSE,
-PHP 7.x,adopt,languages & frameworks,FALSE,
-Symfony 4,adopt,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
+Symfony 5,adopt,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
 C#,adopt,languages & frameworks,FALSE,
 React.js,adopt,languages & frameworks,FALSE,"In computing, React.js is a JavaScript library for building user interfaces."
-Laravel,adopt,languages & frameworks,TRUE,"Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony."
-PHP 8.x,trial,languages & frameworks,TRUE,
+Laravel,adopt,languages & frameworks,FALSE,"Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony."
+PHP 8.x,adopt,languages & frameworks,TRUE,
+Nest.js,trial,languages & frameworks,TRUE,
 Next.JS,trial,languages & frameworks,TRUE,"Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
-Django,assess,languages & frameworks,FALSE,
-Python,assess,languages & frameworks,TRUE,"Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
 Vue.js,assess,languages & frameworks,FALSE,Vue.js is an open-source progressive JavaScript framework for building user interfaces. Integration into projects that use other JavaScript libraries is made easy with Vue because it is designed to be incrementally adoptable. Vue can also function as a web application framework capable of powering advanced single-page applications.
+PHP 7.x,hold,languages & frameworks,FALSE,
+Symfony 3 & 4,hold,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
 ASP.NET MVC,hold,languages & frameworks,FALSE,"We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
-Symfony 3,hold,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
+Django,hold,languages & frameworks,FALSE,
+Python,hold,languages & frameworks,FALSE,"Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
 "Zend Framework 1.x, 2.x",hold,languages & frameworks,FALSE,Zend Framework is a PHP web application framework and a set of reusable PHP components/libraries.
 Phalcon Framework,hold,languages & frameworks,FALSE,A full-stack PHP framework delivered as a C-extension
 Backbone.JS,hold,languages & frameworks,FALSE,"Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the Model–View–Presenter (MVP) application design paradigm. Backbone is known for being lightweight, as its only hard dependency is on one JavaScript library, Underscore.js, plus jQuery for use of the full library."
