@@ -1,4 +1,4 @@
-name,ring,quadrant,isNewf,description
+name,ring,quadrant,isNew,description
 Automated functional tests,adopt,techniques,FALSE,"Using behat, phantom js, headless chome and jenkins"
 Static code analysis,adopt,techniques,FALSE,
 Infrastructure as code,adopt,techniques,FALSE,"We standardized around Terraform for all our Infrastructure providers (AWS, Azure, GCP)"
