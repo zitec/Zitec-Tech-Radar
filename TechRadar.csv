@@ -1,28 +1,24 @@
-name,ring,quadrant,isNew,description
-Automated functional tests,adopt,techniques,FALSE,"prin intermediul behat, phantom js, headless chome si jenkins"
+name,ring,quadrant,isNewf,description
+Automated functional tests,adopt,techniques,FALSE,"Using behat, phantom js, headless chome and jenkins"
 Static code analysis,adopt,techniques,FALSE,
-Infrastructure as code,adopt,techniques,FALSE,"prin intermediul ansible, a mediilor de virtualizare si jenkins"
+Infrastructure as code,adopt,techniques,FALSE,"We standardized around Terraform for all our Infrastructure providers (AWS, Azure, GCP)"
 Continuous integration,adopt,techniques,FALSE,
 Unit Testing,adopt,techniques,FALSE,
-Static security testing,adopt,techniques,TRUE,Using SensioLabs Security Checker for PHP apps
+Static security testing,adopt,techniques,FALSE,Using SensioLabs Security Checker for PHP apps
 Microservices,trial,techniques,TRUE,
-Serverless Apps,trial,techniques,TRUE,
-Let's Encrypt,adopt,tools,FALSE,"Let’s Encrypt is a free, automated, and open certificate authority (CA), run for the public’s benefit."
-Composer,adopt,tools,FALSE,Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
-Ansible,adopt,tools,FALSE,"Ansible is software that automates software provisioning, configuration management, and application deployment."
+Serverless,trial,techniques,TRUE,
+Ansible,adopt,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
 Git,adopt,tools,FALSE,
 GitLab,adopt,tools,FALSE,
-AWS Code Deploy,adopt,tools,FALSE,Will be used for AWS-based projects
+New Relic,adopt,tools,TRUE,
 Webpack,adopt,tools,FALSE,Webpack is an open-source JavaScript module bundler. Webpack takes modules with dependencies and generates static assets representing those modules. It takes the dependencies and generates a dependency graph allowing web developers to use a modular approach for their web application development purposes.
-Yarn,adopt,tools,FALSE,
 Varnish,adopt,tools,FALSE,Will be used mainly on Magento projects
-npm,adopt,tools,FALSE,
 GitLab CI/CD,adopt,tools,FALSE,
 Google Data Studio,adopt,tools,FALSE,
-Blackfire.io,trial,tools,FALSE,
-Tideways,trial,tools,FALSE,
 Azure DevOps,trial,tools,FALSE,"Former Visual Studio Team Services, an Azure-based CI, Git hosting, project management and test planning tool."
-PowerBI,assess,tools,FALSE,
+PowerBI,trial,tools,FALSE,
+AWS Code Deploy,hold,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
+Blackfire.io,hold,tools,FALSE,
 Jenkins,hold,tools,FALSE,
 Gulp,hold,tools,FALSE,"Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development. 
 Will be used for non-bundling tasks."
@@ -38,6 +34,8 @@ Redis,adopt,platforms,FALSE,
 Kubernetes,adopt,platforms,TRUE,
 Docker,adopt,platforms,FALSE,Docker is a computer program that performs operating-system-level virtualization also known as containerization.
 VTEX,trial,platforms,TRUE,
+Google BigQuery,trial,platforms,TRUE,
+Azure Synapse Analytics,trial,platforms,TRUE,
 Strapi,trial,platforms,TRUE,
 WooCommerce,assess,platforms,FALSE,WooCommerce is an open source e-commerce plugin for WordPress. It is designed for small to large-sized online merchants using WordPress.
 Docker Swarm,hold,platforms,FALSE,
