@@ -5,7 +5,9 @@ Infrastructure as code,adopt,techniques,FALSE,"We standardized around Terraform 
 Continuous integration,adopt,techniques,FALSE,
 Unit Testing,adopt,techniques,FALSE,
 Static security testing,adopt,techniques,FALSE,Using SensioLabs Security Checker for PHP apps
-Microservices,trial,techniques,TRUE,
+Log aggregation,adopt,techniques,FALSE,
+Microservices,adopt,techniques,TRUE,
+DORA Four Key Metrics,trial,techniques,TRUE,
 Serverless,trial,techniques,TRUE,
 Ansible,adopt,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
 Git,adopt,tools,FALSE,
@@ -15,6 +17,7 @@ Webpack,adopt,tools,FALSE,Webpack is an open-source JavaScript module bundler. W
 Varnish,adopt,tools,FALSE,Will be used mainly on Magento projects
 GitLab CI/CD,adopt,tools,FALSE,
 Google Data Studio,adopt,tools,FALSE,
+RabbitMQ,adopt,tools,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
 Azure DevOps,trial,tools,FALSE,"Former Visual Studio Team Services, an Azure-based CI, Git hosting, project management and test planning tool."
 PowerBI,trial,tools,FALSE,
 AWS Code Deploy,hold,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
@@ -25,7 +28,6 @@ Will be used for non-bundling tasks."
 Magento 2,adopt,platforms,FALSE,
 MySQL,adopt,platforms,FALSE,
 Wordpress,adopt,platforms,FALSE,"Wordpress is extremely efficient for building simple content management platforms or corporate websites, so it looks like it will be a long-time presence in our portfolio. However, it will only be used by the digital experience team."
-RabbitMQ,adopt,platforms,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
 Amazon Web Services,adopt,platforms,FALSE,
 Microsoft Azure,adopt,platforms,FALSE,
 Google Cloud Platform,adopt,platforms,FALSE,
@@ -33,6 +35,7 @@ Microsoft SQL Server,adopt,platforms,FALSE,
 Redis,adopt,platforms,FALSE,
 Kubernetes,adopt,platforms,TRUE,
 Docker,adopt,platforms,FALSE,Docker is a computer program that performs operating-system-level virtualization also known as containerization.
+Flutter,adopt,platforms,FALSE,
 VTEX,trial,platforms,TRUE,
 Google BigQuery,trial,platforms,TRUE,
 Azure Synapse Analytics,trial,platforms,TRUE,
@@ -54,10 +57,12 @@ ECMAScript 2017 (ES6),adopt,languages & frameworks,FALSE,
 Symfony 5,adopt,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
 C#,adopt,languages & frameworks,FALSE,
 React.js,adopt,languages & frameworks,FALSE,"In computing, React.js is a JavaScript library for building user interfaces."
-Laravel,adopt,languages & frameworks,FALSE,"Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony."
 PHP 8.x,adopt,languages & frameworks,TRUE,
+Swift,adopt,languages & frameworks,FALSE,
+Kotlin,adopt,languages & frameworks,FALSE,
 Nest.js,trial,languages & frameworks,TRUE,
 Next.JS,trial,languages & frameworks,TRUE,"Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
+Laravel,trial,languages & frameworks,FALSE,"Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony."
 Vue.js,assess,languages & frameworks,FALSE,Vue.js is an open-source progressive JavaScript framework for building user interfaces. Integration into projects that use other JavaScript libraries is made easy with Vue because it is designed to be incrementally adoptable. Vue can also function as a web application framework capable of powering advanced single-page applications.
 PHP 7.x,hold,languages & frameworks,FALSE,
 Symfony 3 & 4,hold,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
