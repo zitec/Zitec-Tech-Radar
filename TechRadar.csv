@@ -4,20 +4,21 @@ Static code analysis,adopt,techniques,FALSE,
 Infrastructure as code,adopt,techniques,FALSE,"We standardized around Terraform for all our Infrastructure providers (AWS, Azure, GCP)"
 Continuous integration,adopt,techniques,FALSE,
 Unit Testing,adopt,techniques,FALSE,
-Static security testing,adopt,techniques,FALSE,Using SensioLabs Security Checker for PHP apps
+Static security testing,adopt,techniques,FALSE,
 Log aggregation,adopt,techniques,FALSE,
 Microservices,adopt,techniques,TRUE,
+Standardized code reviews,trial,techniques,TRUE,"Although most of our projects are covered by code reviews, having a standardized reviewing process (aggregating from the best practices across all our projects) will allow us to improve the quality of the development process and deliver a consistent experience to our customers."
 DORA Four Key Metrics,trial,techniques,TRUE,
-Serverless,trial,techniques,TRUE,
+Serverless,trial,techniques,FALSE,
 Ansible,adopt,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
 Git,adopt,tools,FALSE,
 GitLab,adopt,tools,FALSE,
-New Relic,adopt,tools,TRUE,
+New Relic,adopt,tools,FALSE,
+Redis,adopt,tools,FALSE,
 Webpack,adopt,tools,FALSE,Webpack is an open-source JavaScript module bundler. Webpack takes modules with dependencies and generates static assets representing those modules. It takes the dependencies and generates a dependency graph allowing web developers to use a modular approach for their web application development purposes.
 Varnish,adopt,tools,FALSE,Will be used mainly on Magento projects
 GitLab CI/CD,adopt,tools,FALSE,
 Google Data Studio,adopt,tools,FALSE,
-RabbitMQ,adopt,tools,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
 Azure DevOps,trial,tools,FALSE,"Former Visual Studio Team Services, an Azure-based CI, Git hosting, project management and test planning tool."
 PowerBI,trial,tools,FALSE,
 AWS Code Deploy,hold,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
@@ -32,12 +33,13 @@ Amazon Web Services,adopt,platforms,FALSE,
 Microsoft Azure,adopt,platforms,FALSE,
 Google Cloud Platform,adopt,platforms,FALSE,
 Microsoft SQL Server,adopt,platforms,FALSE,
-Redis,adopt,platforms,FALSE,
-Kubernetes,adopt,platforms,TRUE,
+Kubernetes,adopt,platforms,FALSE,
 Docker,adopt,platforms,FALSE,Docker is a computer program that performs operating-system-level virtualization also known as containerization.
 Flutter,adopt,platforms,FALSE,
+RabbitMQ,adopt,platforms,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
 VTEX,trial,platforms,TRUE,
 Google BigQuery,trial,platforms,TRUE,
+PostgreSQL,trial,platforms,TRUE,"PostgreSQL's excellent support for geospatial and JSON data, as well as the ability to horizontally scale the database through mature and fully automated extensions such as Citus make PostgreSQL a great candidate for the primary data source role in our projects."
 Azure Synapse Analytics,trial,platforms,TRUE,
 Strapi,trial,platforms,TRUE,
 WooCommerce,assess,platforms,FALSE,WooCommerce is an open source e-commerce plugin for WordPress. It is designed for small to large-sized online merchants using WordPress.
@@ -52,7 +54,7 @@ Magento 1.x,hold,platforms,FALSE,Magento is an open-source e-commerce platform 
 OpenCart,hold,platforms,FALSE,OpenCart is an open source PHP-based online e-commerce solution.
 Shopify,hold,platforms,FALSE,Shopify is a SaaS e-commerce solution. You can develop apps (modules) or themes using the Shopify SDK.
 Microsoft Sharepoint,hold,platforms,FALSE,
-ASP.NET Core,adopt,languages & frameworks,FALSE,"ASP.NET Core/5 's portability, containerization support and developer experience make it the most loved web framework according to Stack Overflow's Developer Survey 2021. It is a technology we will not only invest in, but focus on intensively throughout 2021 and 2022 to expand its reach within Zitec."
+ASP.NET Core 6,adopt,languages & frameworks,TRUE,"ASP.NET Core's portability, containerization support and developer experience make it the most loved back-end web framework according to Stack Overflow's Developer Survey 2022. Going forward, we will try to both start new projects on, as well as upgrade existing projects to ASP.NET Core 6."
 ECMAScript 2017 (ES6),adopt,languages & frameworks,FALSE,
 Symfony 5,adopt,languages & frameworks,FALSE,Symfony is a PHP web application framework and a set of reusable PHP components/libraries.
 C#,adopt,languages & frameworks,FALSE,
@@ -73,4 +75,5 @@ Python,hold,languages & frameworks,FALSE,"Given the limited knowledge we have, a
 Phalcon Framework,hold,languages & frameworks,FALSE,A full-stack PHP framework delivered as a C-extension
 Backbone.JS,hold,languages & frameworks,FALSE,"Backbone.js is a JavaScript library with a RESTful JSON interface and is based on the Model–View–Presenter (MVP) application design paradigm. Backbone is known for being lightweight, as its only hard dependency is on one JavaScript library, Underscore.js, plus jQuery for use of the full library."
 Phonegap,hold,languages & frameworks,FALSE,
+ASP.NET Core 5,hold,languages & frameworks,FALSE,"ASP.NET Core 5 reached end of support in May 2022, meaning all projects using it or any other previous versions of the framework should upgrade to version 6 as soon as possible."
 ASP.NET WebForms,hold,languages & frameworks,FALSE,
