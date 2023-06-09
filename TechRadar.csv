@@ -35,7 +35,6 @@ Google Cloud Platform,adopt,platforms,FALSE,
 Microsoft SQL Server,adopt,platforms,FALSE,
 Kubernetes,adopt,platforms,FALSE,
 Docker,adopt,platforms,FALSE,Docker is a computer program that performs operating-system-level virtualization also known as containerization.
-Flutter,adopt,platforms,FALSE,
 RabbitMQ,adopt,platforms,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
 VTEX,trial,platforms,TRUE,
 Google BigQuery,trial,platforms,TRUE,
@@ -62,6 +61,7 @@ React.js,adopt,languages & frameworks,FALSE,"In computing, React.js is a JavaScr
 PHP 8.x,adopt,languages & frameworks,TRUE,
 Swift,adopt,languages & frameworks,FALSE,
 Kotlin,adopt,languages & frameworks,FALSE,
+Flutter,adopt,languages & frameworks,FALSE,
 Nest.js,trial,languages & frameworks,TRUE,
 Next.JS,trial,languages & frameworks,TRUE,"Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
 Laravel,trial,languages & frameworks,FALSE,"Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony."
