@@ -10,6 +10,7 @@ Microservices,adopt,techniques,TRUE,
 Standardized code reviews,trial,techniques,TRUE,"Although most of our projects are covered by code reviews, having a standardized reviewing process (aggregating from the best practices across all our projects) will allow us to improve the quality of the development process and deliver a consistent experience to our customers. Detailed reasoning in internal decision record ZDR-0002."
 DORA Four Key Metrics,trial,techniques,TRUE,
 Serverless,trial,techniques,FALSE,
+DORA Four Key Metrics,assess,techniques,TRUE
 Ansible,adopt,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
 Git,adopt,tools,FALSE,
 GitLab,adopt,tools,FALSE,
@@ -21,7 +22,7 @@ GitLab CI/CD,adopt,tools,FALSE,
 Google Data Studio,adopt,tools,FALSE,
 Azure DevOps,trial,tools,FALSE,
 PowerBI,trial,tools,FALSE,
-GitHub Copilot,assess,tools,TRUE,"GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. Adoption progress documented in internal decision record ZDR-0005."
+GitHub Copilot,trial,tools,TRUE,"GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. Adoption progress documented in internal decision record ZDR-0005."
 AWS Code Deploy,hold,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
 Blackfire.io,hold,tools,FALSE,
 Jenkins,hold,tools,FALSE,
@@ -42,6 +43,7 @@ Google BigQuery,trial,platforms,TRUE,
 PostgreSQL,trial,platforms,TRUE,"PostgreSQL's excellent support for geospatial and JSON data, as well as the ability to horizontally scale the database through mature and fully automated extensions such as Citus make PostgreSQL a great candidate for the primary data source role in our projects."
 Azure Synapse Analytics,trial,platforms,TRUE,
 Strapi,trial,platforms,TRUE,
+Apache Kafka,assess,platforms,TRUE,
 WooCommerce,assess,platforms,FALSE,
 Docker Swarm,hold,platforms,FALSE,
 Vagrant,hold,platforms,FALSE,"All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
@@ -66,7 +68,9 @@ Flutter,adopt,languages & frameworks,FALSE,
 Nest.js,trial,languages & frameworks,TRUE,
 Next.JS,trial,languages & frameworks,TRUE,"Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
 Laravel,trial,languages & frameworks,FALSE,
+TypeScript,trial,languages & frameworks,TRUE,
 Vue.js,assess,languages & frameworks,FALSE,
+AdonisJS,assess,languages & frameworks,TRUE
 PHP 7.x,hold,languages & frameworks,FALSE,
 Symfony 3 & 4,hold,languages & frameworks,FALSE,
 ASP.NET MVC,hold,languages & frameworks,FALSE,"We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
