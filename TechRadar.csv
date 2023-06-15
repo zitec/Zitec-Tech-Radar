@@ -8,7 +8,6 @@ Static security testing,adopt,techniques,FALSE,
 Log aggregation,adopt,techniques,FALSE,
 Microservices,adopt,techniques,TRUE,
 Standardized code reviews,trial,techniques,TRUE,"Although most of our projects are covered by code reviews, having a standardized reviewing process (aggregating from the best practices across all our projects) will allow us to improve the quality of the development process and deliver a consistent experience to our customers. Detailed reasoning in internal decision record ZDR-0002."
-DORA Four Key Metrics,trial,techniques,TRUE,
 Serverless,trial,techniques,FALSE,
 DORA Four Key Metrics,assess,techniques,TRUE
 Ansible,adopt,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
