@@ -1,0 +1,83 @@
+name,ring,quadrant,isNew,description
+Automated functional tests,adopt,techniques,FALSE,"Using behat, phantom js, headless chome and jenkins"
+Static code analysis,adopt,techniques,FALSE,
+Infrastructure as code,adopt,techniques,FALSE,"We standardized around Terraform for all our Infrastructure providers (AWS, Azure, GCP)"
+Continuous integration,adopt,techniques,FALSE,
+Unit Testing,adopt,techniques,FALSE,
+Static security testing,adopt,techniques,FALSE,
+Log aggregation,adopt,techniques,FALSE,
+Microservices,adopt,techniques,TRUE,
+Standardized code reviews,trial,techniques,TRUE,"Although most of our projects are covered by code reviews, having a standardized reviewing process (aggregating from the best practices across all our projects) will allow us to improve the quality of the development process and deliver a consistent experience to our customers. Detailed reasoning in internal decision record ZDR-0002."
+Serverless,trial,techniques,FALSE,
+DORA Four Key Metrics,assess,techniques,TRUE
+Ansible,adopt,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
+Git,adopt,tools,FALSE,
+GitLab,adopt,tools,FALSE,
+New Relic,adopt,tools,FALSE,
+Redis,adopt,tools,FALSE,
+Webpack,adopt,tools,FALSE,
+Varnish,adopt,tools,FALSE,"Will be used mainly on Magento projects"
+GitLab CI/CD,adopt,tools,FALSE,
+Google Data Studio,adopt,tools,FALSE,
+Azure DevOps,trial,tools,FALSE,
+PowerBI,trial,tools,FALSE,
+GitHub Copilot,trial,tools,TRUE,"GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. Adoption progress documented in internal decision record ZDR-0005."
+AWS Code Deploy,hold,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
+Blackfire.io,hold,tools,FALSE,
+Jenkins,hold,tools,FALSE,
+Gulp,hold,tools,FALSE,"Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development. 
+Will be used for non-bundling tasks."
+Magento 2,adopt,platforms,FALSE,
+MySQL,adopt,platforms,FALSE,
+Wordpress,adopt,platforms,FALSE,"Wordpress is extremely efficient for building simple content management platforms or corporate websites, so it looks like it will be a long-time presence in our portfolio. However, it will only be used by the digital experience team."
+Amazon Web Services,adopt,platforms,FALSE,
+Microsoft Azure,adopt,platforms,FALSE,
+Google Cloud Platform,adopt,platforms,FALSE,
+Microsoft SQL Server,adopt,platforms,FALSE,
+Kubernetes,adopt,platforms,FALSE,
+Docker,adopt,platforms,FALSE,
+RabbitMQ,adopt,platforms,FALSE,"RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
+VTEX,trial,platforms,TRUE,
+Google BigQuery,trial,platforms,TRUE,
+PostgreSQL,trial,platforms,TRUE,"PostgreSQL's excellent support for geospatial and JSON data, as well as the ability to horizontally scale the database through mature and fully automated extensions such as Citus make PostgreSQL a great candidate for the primary data source role in our projects."
+Azure Synapse Analytics,trial,platforms,TRUE,
+Strapi,trial,platforms,TRUE,
+Apache Kafka,assess,platforms,TRUE,
+WooCommerce,assess,platforms,FALSE,
+Docker Swarm,hold,platforms,FALSE,
+Vagrant,hold,platforms,FALSE,"All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
+Zoho Analytics,hold,platforms,FALSE,
+Drupal 8,hold,platforms,FALSE,"We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dillutes our competitive advantage."
+Ethereum,hold,platforms,FALSE,
+Blockchain,hold,platforms,FALSE,
+PrestaShop,hold,platforms,FALSE,"As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it."
+Magento 1.x,hold,platforms,FALSE,"We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible."
+OpenCart,hold,platforms,FALSE,
+Shopify,hold,platforms,FALSE,
+Microsoft Sharepoint,hold,platforms,FALSE,
+ASP.NET Core 6,adopt,languages & frameworks,TRUE,"ASP.NET Core's portability, containerization support and developer experience make it the most loved back-end web framework according to Stack Overflow's Developer Survey 2022. Going forward, we will try to both start new projects on, as well as upgrade existing projects to ASP.NET Core 6."
+ECMAScript 2017 (ES6),adopt,languages & frameworks,FALSE,
+Symfony 5,adopt,languages & frameworks,FALSE,
+C#,adopt,languages & frameworks,FALSE,
+React.js,adopt,languages & frameworks,FALSE,
+PHP 8.x,adopt,languages & frameworks,TRUE,
+Swift,adopt,languages & frameworks,FALSE,
+Kotlin,adopt,languages & frameworks,FALSE,
+Flutter,adopt,languages & frameworks,FALSE,
+Nest.js,trial,languages & frameworks,TRUE,
+Next.JS,trial,languages & frameworks,TRUE,"Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
+Laravel,trial,languages & frameworks,FALSE,
+TypeScript,trial,languages & frameworks,TRUE,
+Vue.js,assess,languages & frameworks,FALSE,
+AdonisJS,assess,languages & frameworks,TRUE
+PHP 7.x,hold,languages & frameworks,FALSE,
+Symfony 3 & 4,hold,languages & frameworks,FALSE,
+ASP.NET MVC,hold,languages & frameworks,FALSE,"We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
+Django,hold,languages & frameworks,FALSE,
+Python,hold,languages & frameworks,FALSE,"Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
+"Zend Framework 1.x, 2.x",hold,languages & frameworks,FALSE,
+Phalcon Framework,hold,languages & frameworks,FALSE,
+Backbone.JS,hold,languages & frameworks,FALSE,
+Phonegap,hold,languages & frameworks,FALSE,
+ASP.NET Core 5,hold,languages & frameworks,FALSE,"ASP.NET Core 5 reached end of support in May 2022, meaning all projects using it or any other previous versions of the framework should upgrade to version 6 as soon as possible."
+ASP.NET WebForms,hold,languages & frameworks,FALSE,
