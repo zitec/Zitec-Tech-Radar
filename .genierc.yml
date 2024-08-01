@@ -1,0 +1,31 @@
+version: 1
+name: Tech Radar Generator
+install:
+  - type: template.prompt
+    src: development/.env.dist
+    dest: development/.env
+    params:
+      - type: input
+        name: GNI_PROJECT_NAME
+        question: What is the project's name?
+        default: zitectechradar
+      - type: input
+        name: GNI_SCHEMA_FILE 
+        question: What file should be used as the JSON schema?
+        default: schemas/tech-radar-schema.json
+      - type: input
+        name: GNI_TARGET_FILE
+        question: What file should be vailated against the JSON schema?
+        default: tech-radar.json
+  - type: shell.exec
+    command: |-
+      echo "✔️ The project has been installed."
+      echo "👉 In order to run the JSON schema check, please execute ⌨️ 'genie run validate'"
+# hosts:
+#   - name: techradar.local
+#     ip: 127.0.0.1
+scripts:
+#  up: cd ./development && docker-compose up -d
+#  down: cd ./development && docker-compose down
+#  restart: cd ./development && docker-compose restart
+  validate: cd ./development && docker-compose run --remove-orphans linter

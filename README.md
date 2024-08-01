@@ -37,7 +37,6 @@ The radar is validated in Gitlab CI to ensure that the JSON file is correctly fo
 
 ### Validating the JSON file on your local machine
 To test the JSON file locally, follow these steps:
-* Install `make` on your machine (e.g `sudo apt install make` on Ubuntu).
-* Navigate to `development` folder.
-* Duplicate `.env.dist` file and rename it to `.env`.
-* Run `make lint` to validate the JSON file.
+* [Install Genie](https://gitlab.zitec.com/research/genie-installer) on your machine (`bash <(curl -fsSL https://zit.ec/genie)`).
+* Execute `gni install` if this is your first time running the project.
+* Execute `gni run validate` to validate the JSON file.
