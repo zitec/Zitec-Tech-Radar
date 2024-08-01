@@ -1,0 +1,8 @@
+services:
+  linter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/app
+    command: ["ajv", "validate", "-s", "$SCHEMA_FILE", "-d", "$JSON_FILE"]

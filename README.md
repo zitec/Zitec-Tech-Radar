@@ -26,3 +26,18 @@ To add a new radar:
 * Go to the [Build Your Own Radar page](https://radar.thoughtworks.com/) and insert the URL of the raw file from GitHub (eg: https://raw.githubusercontent.com/zitec/Zitec-Tech-Radar/master/TechRadar.csv)
 * Finally, build the radar, take the resulting URL and share it with any interested party.
 * Optionally, you can generate a short URL (using the https://zit.ec domain) using https://rebrandly.com/. Please use the Tech Leads chat group to ask for support with this.
+
+## [New] Tech Radar for Backstage platform
+
+The tech radar is now available in JSON format, which can be used to display the radar in the Backstage platform. 
+
+The current version of the radar unifies the data sources for the Dev and QA radars. The JSON file is available [here](./tech-radar.json).
+
+The radar is validated in Gitlab CI to ensure that the JSON file is correctly formatted.
+
+### Validating the JSON file on your local machine
+To test the JSON file locally, follow these steps:
+* Install `make` on your machine (e.g `sudo apt install make` on Ubuntu).
+* Navigate to `development` folder.
+* Duplicate `.env.dist` file and rename it to `.env`.
+* Run `make lint` to validate the JSON file.
