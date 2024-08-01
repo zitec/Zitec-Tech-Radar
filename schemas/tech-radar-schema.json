@@ -22,7 +22,7 @@
         "properties": {
           "id": { "type": "string" },
           "name": { "type": "string" },
-          "color": { "type": "string" },
+          "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
           "description": { "type": "string" }
         },
         "additionalProperties": false,
@@ -36,14 +36,20 @@
         "properties": {
           "key": { "type": "string" },
           "title": { "type": "string" },
-          "quadrant": { "type": "string" },
+          "quadrant": { 
+            "type": "string",
+            "enum": ["1", "2", "3", "4"]
+          },
           "description": { "type": "string" },
           "timeline": {
             "type": "array",
             "items": {
               "type": "object",
               "properties": {
-                "ringId": { "type": "string" },
+                "ringId": { 
+                  "type": "string",
+                  "enum": ["adopt", "trial", "assess", "hold"]
+                },
                 "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
                 "description": { "type": "string" },
                 "moved": { "type": "integer", "enum": [-1, 0, 1] }
