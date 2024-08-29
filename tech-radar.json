@@ -1,0 +1,1748 @@
+{
+  "title": "Dev Tech radar",
+  "quadrants": [
+    {
+      "id": "1",
+      "name": "Languages & frameworks"
+    },
+    {
+      "id": "2",
+      "name": "Platforms"
+    },
+    {
+      "id": "3",
+      "name": "Techniques"
+    },
+    {
+      "id": "4",
+      "name": "Tools"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "name": "ADOPT",
+      "color": "#93c47d"
+    },
+    {
+      "id": "trial",
+      "name": "TRIAL",
+      "color": "#93d2c2"
+    },
+    {
+      "id": "assess",
+      "name": "ASSESS",
+      "color": "#fbdb84"
+    },
+    {
+      "id": "hold",
+      "name": "HOLD",
+      "color": "#efafa9"
+    }
+  ],
+  "entries": [
+    {
+      "key": "automated-functional-tests",
+      "title": "Automated functional tests",
+      "quadrant": "3",
+      "description": "Using behat, phantom js, headless chome and jenkins",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Using behat, phantom js, headless chome and jenkins"
+        }
+      ]
+    },
+    {
+      "key": "static-code-analysis",
+      "title": "Static code analysis",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "infrastructure-as-code",
+      "title": "Infrastructure as code",
+      "quadrant": "3",
+      "description": "We standardized around Terraform for all our Infrastructure providers (AWS, Azure, GCP)",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "We standardized around Terraform for all our Infrastructure providers (AWS, Azure, GCP)"
+        }
+      ]
+    },
+    {
+      "key": "continuous-integration",
+      "title": "Continuous integration",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "unit-testing",
+      "title": "Unit Testing",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "static-security-testing",
+      "title": "Static security testing",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "log-aggregation",
+      "title": "Log aggregation",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "microservices",
+      "title": "Microservices",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "standardized-code-reviews",
+      "title": "Standardized code reviews",
+      "quadrant": "3",
+      "description": "Although most of our projects are covered by code reviews, having a standardized reviewing process (aggregating from the best practices across all our projects) will allow us to improve the quality of the development process and deliver a consistent experience to our customers. Detailed reasoning in internal decision record ZDR-0002.",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": "Although most of our projects are covered by code reviews, having a standardized reviewing process (aggregating from the best practices across all our projects) will allow us to improve the quality of the development process and deliver a consistent experience to our customers. Detailed reasoning in internal decision record ZDR-0002."
+        }
+      ]
+    },
+    {
+      "key": "serverless",
+      "title": "Serverless",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "dora-four-key-metrics",
+      "title": "DORA Four Key Metrics",
+      "quadrant": "3",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "ansible",
+      "title": "Ansible",
+      "quadrant": "4",
+      "description": "Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
+        }
+      ]
+    },
+    {
+      "key": "git",
+      "title": "Git",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "gitlab",
+      "title": "GitLab",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "new-relic",
+      "title": "New Relic",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "redis",
+      "title": "Redis",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "webpack",
+      "title": "Webpack",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "varnish",
+      "title": "Varnish",
+      "quadrant": "4",
+      "description": "Will be used mainly on Magento projects",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Will be used mainly on Magento projects"
+        }
+      ]
+    },
+    {
+      "key": "gitlab-ci/cd",
+      "title": "GitLab CI/CD",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "looker-data-studio",
+      "title": "Looker Data Studio",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "powerbi",
+      "title": "PowerBI",
+      "quadrant": "4",
+      "description": "PowerBI is a business analytics tool that provides interactive visualizations and BI capabilities with an interface that is easy to use for creating reports and dashboards. We like PowerBI because it supports a large number of data sources and offers a significant number of highly customizable reports and dashboards. We also like its ability to connect directly to data sources through DirectQuery. We will be using PowerBI for all our BI needs when the data warehouse/data source is in Azure.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "PowerBI is a business analytics tool that provides interactive visualizations and BI capabilities with an interface that is easy to use for creating reports and dashboards. We like PowerBI because it supports a large number of data sources and offers a significant number of highly customizable reports and dashboards. We also like its ability to connect directly to data sources through DirectQuery. We will be using PowerBI for all our BI needs when the data warehouse/data source is in Azure."
+        }
+      ]
+    },
+    {
+      "key": "github-copilot",
+      "title": "GitHub Copilot",
+      "quadrant": "4",
+      "description": "GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. Adoption progress documented in internal decision record ZDR-0005.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. Adoption progress documented in internal decision record ZDR-0005."
+        }
+      ]
+    },
+    {
+      "key": "azure-devops",
+      "title": "Azure DevOps",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "aws-code-deploy",
+      "title": "AWS Code Deploy",
+      "quadrant": "4",
+      "description": "Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
+        }
+      ]
+    },
+    {
+      "key": "blackfire.io",
+      "title": "Blackfire.io",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "jenkins",
+      "title": "Jenkins",
+      "quadrant": "4",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "gulp",
+      "title": "Gulp",
+      "quadrant": "4",
+      "description": "Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development.\r\nWill be used for non-bundling tasks.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development.\r\nWill be used for non-bundling tasks."
+        }
+      ]
+    },
+    {
+      "key": "magento-2",
+      "title": "Magento 2",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "mysql",
+      "title": "MySQL",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "wordpress",
+      "title": "Wordpress",
+      "quadrant": "2",
+      "description": "Wordpress is extremely efficient for building simple content management platforms or corporate websites, so it looks like it will be a long-time presence in our portfolio. However, it will only be used by the digital experience team.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Wordpress is extremely efficient for building simple content management platforms or corporate websites, so it looks like it will be a long-time presence in our portfolio. However, it will only be used by the digital experience team."
+        }
+      ]
+    },
+    {
+      "key": "amazon-web-services",
+      "title": "Amazon Web Services",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "microsoft-azure",
+      "title": "Microsoft Azure",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "google-cloud-platform",
+      "title": "Google Cloud Platform",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "microsoft-sql-server",
+      "title": "Microsoft SQL Server",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "kubernetes",
+      "title": "Kubernetes",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "docker",
+      "title": "Docker",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "rabbitmq",
+      "title": "RabbitMQ",
+      "quadrant": "2",
+      "description": "RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "RabbitMQ's excellent support for queues and pub/sub make it a good candidate for projects requiring advanced messaging features. For projects running on Google Cloud Platform or Microsoft Azure we highly encourage our teams to first look at the messaging services offered by the respective cloud platforms, but for AWS or on-prem based workloads RabbitMQ can be the first choice."
+        }
+      ]
+    },
+    {
+      "key": "vtex",
+      "title": "VTEX",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "google-bigquery",
+      "title": "Google BigQuery",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "postgresql",
+      "title": "PostgreSQL",
+      "quadrant": "2",
+      "description": "PostgreSQL's excellent support for geospatial and JSON data, as well as the ability to horizontally scale the database through mature and fully automated extensions such as Citus make PostgreSQL a great candidate for the primary data source role in our projects.",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": "PostgreSQL's excellent support for geospatial and JSON data, as well as the ability to horizontally scale the database through mature and fully automated extensions such as Citus make PostgreSQL a great candidate for the primary data source role in our projects."
+        }
+      ]
+    },
+    {
+      "key": "azure-synapse-analytics",
+      "title": "Azure Synapse Analytics",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "strapi",
+      "title": "Strapi",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "apache-kafka",
+      "title": "Apache Kafka",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "woocommerce",
+      "title": "WooCommerce",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "docker-swarm",
+      "title": "Docker Swarm",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "vagrant",
+      "title": "Vagrant",
+      "quadrant": "2",
+      "description": "All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
+        }
+      ]
+    },
+    {
+      "key": "zoho-analytics",
+      "title": "Zoho Analytics",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "drupal-8",
+      "title": "Drupal 8",
+      "quadrant": "2",
+      "description": "We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dillutes our competitive advantage.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dillutes our competitive advantage."
+        }
+      ]
+    },
+    {
+      "key": "ethereum",
+      "title": "Ethereum",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "blockchain",
+      "title": "Blockchain",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "prestashop",
+      "title": "PrestaShop",
+      "quadrant": "2",
+      "description": "As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it."
+        }
+      ]
+    },
+    {
+      "key": "magento-1.x",
+      "title": "Magento 1.x",
+      "quadrant": "2",
+      "description": "We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible."
+        }
+      ]
+    },
+    {
+      "key": "opencart",
+      "title": "OpenCart",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "shopify",
+      "title": "Shopify",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "microsoft-sharepoint",
+      "title": "Microsoft Sharepoint",
+      "quadrant": "2",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "asp.net-core-6",
+      "title": "ASP.NET Core 6",
+      "quadrant": "1",
+      "description": "ASP.NET Core's portability, containerization support and developer experience make it the most loved back-end web framework according to Stack Overflow's Developer Survey 2022. Going forward, we will try to both start new projects on, as well as upgrade existing projects to ASP.NET Core 6.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "ASP.NET Core's portability, containerization support and developer experience make it the most loved back-end web framework according to Stack Overflow's Developer Survey 2022. Going forward, we will try to both start new projects on, as well as upgrade existing projects to ASP.NET Core 6."
+        }
+      ]
+    },
+    {
+      "key": "ecmascript-2017-(es6)",
+      "title": "ECMAScript 2017 (ES6)",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "symfony-5",
+      "title": "Symfony 5",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "c#",
+      "title": "C#",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "react.js",
+      "title": "React.js",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "php-8.x",
+      "title": "PHP 8.x",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "swift",
+      "title": "Swift",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "kotlin",
+      "title": "Kotlin",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "flutter",
+      "title": "Flutter",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "typescript",
+      "title": "TypeScript",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "react-admin",
+      "title": "React Admin",
+      "quadrant": "1",
+      "description": "React Admin is a React-based framework for building customizable admin panesl. It provides ready-to-use components for common tasks, abstracting away CRUD operations, form validation, and UI customization. This ensures a consistent user experience across different backend technologies. Its high customizability allows for a uniform look and feel across applications, regardless of specific requirements.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "React Admin is a React-based framework for building customizable admin panesl. It provides ready-to-use components for common tasks, abstracting away CRUD operations, form validation, and UI customization. This ensures a consistent user experience across different backend technologies. Its high customizability allows for a uniform look and feel across applications, regardless of specific requirements."
+        }
+      ]
+    },
+    {
+      "key": "nest.js",
+      "title": "Nest.js",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "next.js",
+      "title": "Next.JS",
+      "quadrant": "1",
+      "description": "Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives.",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": "Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
+        }
+      ]
+    },
+    {
+      "key": "laravel",
+      "title": "Laravel",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "langchain",
+      "title": "LangChain",
+      "quadrant": "1",
+      "description": "LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources. It is a promising technology that could significantly reduce the time and effort required to build AI applications and our experience with it so far has been quite positive, but we need to further test it in additional real-world scenarios before making a decision.",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": "LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources. It is a promising technology that could significantly reduce the time and effort required to build AI applications and our experience with it so far has been quite positive, but we need to further test it in additional real-world scenarios before making a decision."
+        }
+      ]
+    },
+    {
+      "key": "vue.js",
+      "title": "Vue.js",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "adonisjs",
+      "title": "AdonisJS",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "php-7.x",
+      "title": "PHP 7.x",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "symfony-3-&-4",
+      "title": "Symfony 3 & 4",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "asp.net-mvc",
+      "title": "ASP.NET MVC",
+      "quadrant": "1",
+      "description": "We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
+        }
+      ]
+    },
+    {
+      "key": "django",
+      "title": "Django",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "python",
+      "title": "Python",
+      "quadrant": "1",
+      "description": "Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
+        }
+      ]
+    },
+    {
+      "key": "zend-framework",
+      "title": "Zend Framework",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "phalcon-framework",
+      "title": "Phalcon Framework",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "backbone.js",
+      "title": "Backbone.JS",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "phonegap",
+      "title": "Phonegap",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "asp.net-core-5",
+      "title": "ASP.NET Core 5",
+      "quadrant": "1",
+      "description": "ASP.NET Core 5 reached end of support in May 2022, meaning all projects using it or any other previous versions of the framework should upgrade to version 6 as soon as possible.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "ASP.NET Core 5 reached end of support in May 2022, meaning all projects using it or any other previous versions of the framework should upgrade to version 6 as soon as possible."
+        }
+      ]
+    },
+    {
+      "key": "asp.net-webforms",
+      "title": "ASP.NET WebForms",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "codeception",
+      "title": "Codeception",
+      "quadrant": "1",
+      "description": "Codeception is a multi-featured testing framework for PHP. It can handle unit, functional, and acceptance testing of web applications and it's powered by the already very popular PHPUnit testing framework",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Codeception is a multi-featured testing framework for PHP. It can handle unit, functional, and acceptance testing of web applications and it's powered by the already very popular PHPUnit testing framework"
+        }
+      ]
+    },
+    {
+      "key": "cypress",
+      "title": "Cypress",
+      "quadrant": "1",
+      "description": "Cypress is an automation testing framework for front end. Can be used for end-to-end and component testing and can test anything that runs in a browser.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Cypress is an automation testing framework for front end. Can be used for end-to-end and component testing and can test anything that runs in a browser."
+        }
+      ]
+    },
+    {
+      "key": "javascript",
+      "title": "JavaScript",
+      "quadrant": "1",
+      "description": "JavaScript is a scripting language used to create and control dynamic website content, i.e. anything that moves, refreshes, or otherwise changes on your screen without requiring you to manually reload a web page.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "JavaScript is a scripting language used to create and control dynamic website content, i.e. anything that moves, refreshes, or otherwise changes on your screen without requiring you to manually reload a web page."
+        }
+      ]
+    },
+    {
+      "key": "laravel-dusk",
+      "title": "Laravel Dusk",
+      "quadrant": "1",
+      "description": "Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation."
+        }
+      ]
+    },
+    {
+      "key": "phpunit",
+      "title": "PHPUnit",
+      "quadrant": "1",
+      "description": "PHPUnit is a programmer-oriented testing framework for PHP.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "PHPUnit is a programmer-oriented testing framework for PHP."
+        }
+      ]
+    },
+    {
+      "key": "testcafe",
+      "title": "Testcafe",
+      "quadrant": "1",
+      "description": "TestCafe is a pure node. js end-to-end solution for testing web apps. It takes care of all the stages: starting browsers, running tests, gathering test results and generating reports. TestCafe doesn't need browser plugins - it works in all popular modern browsers out-of-the-box.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "TestCafe is a pure node. js end-to-end solution for testing web apps. It takes care of all the stages: starting browsers, running tests, gathering test results and generating reports. TestCafe doesn't need browser plugins - it works in all popular modern browsers out-of-the-box."
+        }
+      ]
+    },
+    {
+      "key": "behat",
+      "title": "Behat",
+      "quadrant": "1",
+      "description": "Is used for API scripts and is used with the in-house developed extension.\r\nBehat is an open source Behavior-Driven Development framework for PHP. It is a tool to support you in delivering software that matters through continuous communication, deliberate discovery and test-automation.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Is used for API scripts and is used with the in-house developed extension.\r\nBehat is an open source Behavior-Driven Development framework for PHP. It is a tool to support you in delivering software that matters through continuous communication, deliberate discovery and test-automation."
+        }
+      ]
+    },
+    {
+      "key": "selenium",
+      "title": "Selenium",
+      "quadrant": "1",
+      "description": "SELENIUM is a free (open-source) automated testing framework used to validate web applications across different browsers and platforms. You can use multiple programming languages like Java, C#, Python etc to create Selenium Test Scripts. Testing done using the Selenium tool is usually referred to as Selenium Testing.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "SELENIUM is a free (open-source) automated testing framework used to validate web applications across different browsers and platforms. You can use multiple programming languages like Java, C#, Python etc to create Selenium Test Scripts. Testing done using the Selenium tool is usually referred to as Selenium Testing."
+        }
+      ]
+    },
+    {
+      "key": "adobe-experience-manager-6.x",
+      "title": "Adobe Experience Manager 6.x",
+      "quadrant": "2",
+      "description": "Adobe Experience Manager (AEM), is a comprehensive content management solution for building websites, mobile apps and forms. ",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Adobe Experience Manager (AEM), is a comprehensive content management solution for building websites, mobile apps and forms. "
+        }
+      ]
+    },
+    {
+      "key": "wordpress",
+      "title": "Wordpress",
+      "quadrant": "2",
+      "description": "WordPress (WordPress.org) is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "WordPress (WordPress.org) is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database."
+        }
+      ]
+    },
+    {
+      "key": "compatibility-testing",
+      "title": "Compatibility testing",
+      "quadrant": "3",
+      "description": "Compatibility testing ensures that software can run on a different configuration, different database, different browsers, and their versions.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Compatibility testing ensures that software can run on a different configuration, different database, different browsers, and their versions."
+        }
+      ]
+    },
+    {
+      "key": "end-to-end-testing-/-system-testing",
+      "title": "End to end testing / system testing",
+      "quadrant": "3",
+      "description": "End-to-End Testing involves testing of a complete application environment in a situation that mimics real-world use, such as interacting with a database, using network communications, or interacting with other hardware, applications, or systems if appropriate.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "End-to-End Testing involves testing of a complete application environment in a situation that mimics real-world use, such as interacting with a database, using network communications, or interacting with other hardware, applications, or systems if appropriate."
+        }
+      ]
+    },
+    {
+      "key": "exploratory-testing",
+      "title": "Exploratory testing",
+      "quadrant": "3",
+      "description": "EXPLORATORY TESTING is a type of software testing where Test cases are not created in advance but testers check system on the fly. They may note down ideas about what to test before test execution. The focus of exploratory testing is more on testing as a \"thinking\" activity.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "EXPLORATORY TESTING is a type of software testing where Test cases are not created in advance but testers check system on the fly. They may note down ideas about what to test before test execution. The focus of exploratory testing is more on testing as a \"thinking\" activity."
+        }
+      ]
+    },
+    {
+      "key": "integration-testing",
+      "title": "Integration testing",
+      "quadrant": "3",
+      "description": "INTEGRATION TESTING is a level of software testing where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. Test drivers and test stubs are used to assist in Integration Testing.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "INTEGRATION TESTING is a level of software testing where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. Test drivers and test stubs are used to assist in Integration Testing."
+        }
+      ]
+    },
+    {
+      "key": "load-testing",
+      "title": "Load Testing",
+      "quadrant": "3",
+      "description": "A load test is type of software testing which is conducted to understand the behavior of the application under a specific expected load. Load testing is performed to determine a system’s behavior under both normal and at peak conditions.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "A load test is type of software testing which is conducted to understand the behavior of the application under a specific expected load. Load testing is performed to determine a system’s behavior under both normal and at peak conditions."
+        }
+      ]
+    },
+    {
+      "key": "localization-testing",
+      "title": "Localization testing",
+      "quadrant": "3",
+      "description": "Localization testing is a software testing technique, that checks that the software behaves according to the local culture or settings(language, currency, time and date..etc).",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Localization testing is a software testing technique, that checks that the software behaves according to the local culture or settings(language, currency, time and date..etc)."
+        }
+      ]
+    },
+    {
+      "key": "regression-testing",
+      "title": "Regression testing",
+      "quadrant": "3",
+      "description": "REGRESSION TESTING is defined as a type of software testing to confirm that a recent program or code change has not adversely affected existing features.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "REGRESSION TESTING is defined as a type of software testing to confirm that a recent program or code change has not adversely affected existing features."
+        }
+      ]
+    },
+    {
+      "key": "smoke-testing",
+      "title": "Smoke testing",
+      "quadrant": "3",
+      "description": "SMOKE TESTING is a type of software testing that determines whether the deployed build is stable or not. The purpose of Smoke Tests it to confirm whether the QA team can proceed with further testing. Smoke tests are a minimal set of tests run on each build.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "SMOKE TESTING is a type of software testing that determines whether the deployed build is stable or not. The purpose of Smoke Tests it to confirm whether the QA team can proceed with further testing. Smoke tests are a minimal set of tests run on each build."
+        }
+      ]
+    },
+    {
+      "key": "stress-testing",
+      "title": "Stress testing",
+      "quadrant": "3",
+      "description": "This testing is done when a system is stressed beyond its specifications in order to check how and when it fails. This is performed under heavy load like putting large number beyond storage capacity, complex database queries, continuous input to the system or database load.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "This testing is done when a system is stressed beyond its specifications in order to check how and when it fails. This is performed under heavy load like putting large number beyond storage capacity, complex database queries, continuous input to the system or database load."
+        }
+      ]
+    },
+    {
+      "key": "user-acceptance-testing",
+      "title": "User Acceptance Testing",
+      "quadrant": "3",
+      "description": "User acceptance testing (UAT) is the last phase of the software testing process. During UAT, actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications. UAT is one of the final and critical software project procedures that must occur before newly developed software is rolled out to the market.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "User acceptance testing (UAT) is the last phase of the software testing process. During UAT, actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications. UAT is one of the final and critical software project procedures that must occur before newly developed software is rolled out to the market."
+        }
+      ]
+    },
+    {
+      "key": "security-testing",
+      "title": "Security testing",
+      "quadrant": "3",
+      "description": "Security Testing is done to check how the software or application or website is secure from internal and external threats. This testing includes how much software is secure from the malicious program, viruses and how secure and strong the authorization and authentication processes are.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Security Testing is done to check how the software or application or website is secure from internal and external threats. This testing includes how much software is secure from the malicious program, viruses and how secure and strong the authorization and authentication processes are."
+        }
+      ]
+    },
+    {
+      "key": "backstop.js",
+      "title": "Backstop.JS",
+      "quadrant": "4",
+      "description": "BackstopJS automates visual regression testing of your responsive web UI by comparing DOM screenshots over time.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "BackstopJS automates visual regression testing of your responsive web UI by comparing DOM screenshots over time."
+        }
+      ]
+    },
+    {
+      "key": "browserstack",
+      "title": "Browserstack",
+      "quadrant": "4",
+      "description": "BrowserStack is a cloud web and mobile testing platform that enables developers and QA to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "BrowserStack is a cloud web and mobile testing platform that enables developers and QA to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators."
+        }
+      ]
+    },
+    {
+      "key": "gitlab",
+      "title": "Gitlab",
+      "quadrant": "4",
+      "description": "GitLab is a web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking and continuous integration/continuous deployment pipeline features.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "GitLab is a web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking and continuous integration/continuous deployment pipeline features."
+        }
+      ]
+    },
+    {
+      "key": "jira",
+      "title": "Jira",
+      "quadrant": "4",
+      "description": "Jira is a a project tracking tool used for documenting test cases and bug tracking.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Jira is a a project tracking tool used for documenting test cases and bug tracking."
+        }
+      ]
+    },
+    {
+      "key": "jmeter",
+      "title": "Jmeter",
+      "quadrant": "4",
+      "description": "JMeter is used to analyze and measure the performance of web application or a variety of services",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "JMeter is used to analyze and measure the performance of web application or a variety of services"
+        }
+      ]
+    },
+    {
+      "key": "lighthouse",
+      "title": "Lighthouse",
+      "quadrant": "4",
+      "description": "Lighthouse is an open-source, automated tool for improving the quality of web pages and it can be found in Chrome DevTools.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Lighthouse is an open-source, automated tool for improving the quality of web pages and it can be found in Chrome DevTools."
+        }
+      ]
+    },
+    {
+      "key": "postman",
+      "title": "Postman",
+      "quadrant": "4",
+      "description": "Postman is a tool used for testing APIs.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Postman is a tool used for testing APIs."
+        }
+      ]
+    },
+    {
+      "key": "taurus",
+      "title": "Taurus",
+      "quadrant": "4",
+      "description": "Taurus is a tool that provides a simple way to create and run performance tests, as well as an easy integration with additional open-source functional and performance testing software, like Selenium, Gatling or JMeter. Taurus uses YAML files, which are very easy to understand.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Taurus is a tool that provides a simple way to create and run performance tests, as well as an easy integration with additional open-source functional and performance testing software, like Selenium, Gatling or JMeter. Taurus uses YAML files, which are very easy to understand."
+        }
+      ]
+    },
+    {
+      "key": "tsung",
+      "title": "Tsung",
+      "quadrant": "4",
+      "description": "Tsung is a robust, load-testing tool used to benchmark the performance of instant messaging servers.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "Tsung is a robust, load-testing tool used to benchmark the performance of instant messaging servers."
+        }
+      ]
+    },
+    {
+      "key": "xray",
+      "title": "Xray",
+      "quadrant": "4",
+      "description": "Xray is a complete Test Management tool for Jira. Xray supports the entire testing life cycle: test planning, test design, test execution and test reporting.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Xray is a complete Test Management tool for Jira. Xray supports the entire testing life cycle: test planning, test design, test execution and test reporting."
+        }
+      ]
+    },
+    {
+      "key": "zephyr",
+      "title": "Zephyr",
+      "quadrant": "4",
+      "description": "The Zephyr tool suite gives you integrated quality metrics that deliver real time visibility of your projects development progress and status. This capability stems from our unrivalled integration with Jira and a range of other key development and test products.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "The Zephyr tool suite gives you integrated quality metrics that deliver real time visibility of your projects development progress and status. This capability stems from our unrivalled integration with Jira and a range of other key development and test products."
+        }
+      ]
+    },
+    {
+      "key": "burp-suite",
+      "title": "Burp Suite",
+      "quadrant": "4",
+      "description": "Burp Intruder is an advanced tool for automating custom attacks against applications.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Burp Intruder is an advanced tool for automating custom attacks against applications."
+        }
+      ]
+    },
+    {
+      "key": "jenkins",
+      "title": "Jenkins",
+      "quadrant": "4",
+      "description": "Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software."
+        }
+      ]
+    },
+    {
+      "key": "redmine",
+      "title": "Redmine",
+      "quadrant": "4",
+      "description": "Redmine is a a project tracking tool used for documenting test cases and bug tracking.",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "date": "2024-01-01",
+          "description": "Redmine is a a project tracking tool used for documenting test cases and bug tracking."
+        }
+      ]
+    },
+    {
+      "key": "kibana",
+      "title": "Kibana",
+      "quadrant": "4",
+      "description": "Kibana is a visual interface tool that allows you to explore, visualize, and build a dashboard of the logs, it is used by QA to troubleshoot various errors.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Kibana is a visual interface tool that allows you to explore, visualize, and build a dashboard of the logs, it is used by QA to troubleshoot various errors."
+        }
+      ]
+    },
+    {
+      "key": "k6",
+      "title": "k6",
+      "quadrant": "4",
+      "description": "k6 is an open source framework built to make performance testing fun for developers. k6 stands out because of its ability to encapsulate usability and performance while also bundling tools like a command-line interface to execute scripts and a dashboard to monitor the test run results",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "k6 is an open source framework built to make performance testing fun for developers. k6 stands out because of its ability to encapsulate usability and performance while also bundling tools like a command-line interface to execute scripts and a dashboard to monitor the test run results"
+        }
+      ]
+    },
+    {
+      "key": "knex",
+      "title": "knex",
+      "quadrant": "4",
+      "description": "Knex.js (pronounced /kəˈnɛks/) is a \"batteries included\" SQL query builder for PostgreSQL, CockroachDB, MSSQL, MySQL, MariaDB, SQLite3, Better-SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use.\r\n\r\nIt features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full-featured query and schema builders, transaction support (with savepoints), connection pooling and standardized responses between different query clients and dialects.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Knex.js (pronounced /kəˈnɛks/) is a \"batteries included\" SQL query builder for PostgreSQL, CockroachDB, MSSQL, MySQL, MariaDB, SQLite3, Better-SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use.\r\n\r\nIt features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full-featured query and schema builders, transaction support (with savepoints), connection pooling and standardized responses between different query clients and dialects."
+        }
+      ]
+    },
+    {
+      "key": "magento",
+      "title": "Magento",
+      "quadrant": "2",
+      "description": "Magento is now Adobe Commerce. Build multichannel experiences for B2B and B2C customers on a single eCommerce platform. Magento1/Magento 2",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Magento is now Adobe Commerce. Build multichannel experiences for B2B and B2C customers on a single eCommerce platform. Magento1/Magento 2"
+        }
+      ]
+    },
+    {
+      "key": "microservices-testing",
+      "title": "Microservices testing",
+      "quadrant": "3",
+      "description": "What is Microservices Testing? A microservices architecture creates an application as a collection of services. Each microservice works independently and uses application programming interfaces (APIs) to communicate with other services. Each microservice has its own data store and is deployed independently.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "What is Microservices Testing? A microservices architecture creates an application as a collection of services. Each microservice works independently and uses application programming interfaces (APIs) to communicate with other services. Each microservice has its own data store and is deployed independently."
+        }
+      ]
+    },
+    {
+      "key": "mobile-app-testing",
+      "title": "Mobile App testing",
+      "quadrant": "3",
+      "description": "Testing mobile specific applications for Android and/or iOS.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Testing mobile specific applications for Android and/or iOS."
+        }
+      ]
+    },
+    {
+      "key": "c#",
+      "title": "C#",
+      "quadrant": "1",
+      "description": "# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. At its core, C# is an object-oriented language. You define types and their behavior.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. At its core, C# is an object-oriented language. You define types and their behavior."
+        }
+      ]
+    },
+    {
+      "key": "appium",
+      "title": "Appium",
+      "quadrant": "1",
+      "description": "Appium is an open-source tool for automating native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop platforms.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Appium is an open-source tool for automating native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop platforms."
+        }
+      ]
+    },
+    {
+      "key": "blockchain-testing",
+      "title": "Blockchain testing",
+      "quadrant": "3",
+      "description": "Blockchain testing is the systematic evaluation of the blockchain's various functional components (e.g., smart contracts). Unlike traditional software testing, blockchain testing involves several components such as blocks, mining, transactions, wallets, and so on, all of which require special tools to test.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Blockchain testing is the systematic evaluation of the blockchain's various functional components (e.g., smart contracts). Unlike traditional software testing, blockchain testing involves several components such as blocks, mining, transactions, wallets, and so on, all of which require special tools to test."
+        }
+      ]
+    },
+    {
+      "key": "pactumjs",
+      "title": "PactumJS",
+      "quadrant": "1",
+      "description": "PactumJS is a free & open-source REST API Automation library for all levels in a Test Pyramid written in JavaScript. Write general, component, integration, contract & e2e tests for REST APIs with this library. There are many HTTP client, HTTP server & assertion packages available in the Node.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "PactumJS is a free & open-source REST API Automation library for all levels in a Test Pyramid written in JavaScript. Write general, component, integration, contract & e2e tests for REST APIs with this library. There are many HTTP client, HTTP server & assertion packages available in the Node."
+        }
+      ]
+    },
+    {
+      "key": "playwright",
+      "title": "Playwright",
+      "quadrant": "1",
+      "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable and fast."
+        }
+      ]
+    },
+    {
+      "key": "github-copilot",
+      "title": "Github Copilot",
+      "quadrant": "4",
+      "description": "GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. ",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "date": "2024-01-01",
+          "description": "GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. "
+        }
+      ]
+    },
+    {
+      "key": "specflow",
+      "title": "Specflow",
+      "quadrant": "1",
+      "description": "SpecFlow is an open-source project. The source code is hosted on GitHub. The feature files used by SpecFlow to store an acceptance criterion for features (use cases, user stories) in your application are defined using the Gherkin syntax. The Gherkin format was introduced by Cucumber and is also used by other tools.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "SpecFlow is an open-source project. The source code is hosted on GitHub. The feature files used by SpecFlow to store an acceptance criterion for features (use cases, user stories) in your application are defined using the Gherkin syntax. The Gherkin format was introduced by Cucumber and is also used by other tools."
+        }
+      ]
+    }
+  ]
+}

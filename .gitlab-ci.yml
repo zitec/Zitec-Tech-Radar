@@ -1,0 +1,17 @@
+.lint_json:
+  stage: lint
+  image: node:latest
+  script:
+    - npm install -g ajv-cli
+    - ajv validate -s $SCHEMA_FILE -d $JSON_FILE
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+lint-tech-radar:
+  extends: .lint_json
+  variables:
+    SCHEMA_FILE: schemas/tech-radar-schema.json
+    JSON_FILE: tech-radar.json
+
+stages:
+  - lint
