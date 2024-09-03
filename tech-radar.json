@@ -198,8 +198,8 @@
       ]
     },
     {
-      "key": "gitlab",
-      "title": "GitLab",
+      "key": "gitlab-ci/cd",
+      "title": "GitLab CI/CD",
       "quadrant": "4",
       "description": "",
       "timeline": [
