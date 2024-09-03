@@ -42,19 +42,6 @@
   ],
   "entries": [
     {
-      "key": "automated-functional-tests",
-      "title": "Automated functional tests",
-      "quadrant": "3",
-      "description": "Using behat, phantom js, headless chome and jenkins",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Using behat, phantom js, headless chome and jenkins"
-        }
-      ]
-    },
-    {
       "key": "static-code-analysis",
       "title": "Static code analysis",
       "quadrant": "3",
@@ -272,19 +259,6 @@
           "ringId": "adopt",
           "date": "2024-01-01",
           "description": "Will be used mainly on Magento projects"
-        }
-      ]
-    },
-    {
-      "key": "gitlab-ci/cd",
-      "title": "GitLab CI/CD",
-      "quadrant": "4",
-      "description": "",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": ""
         }
       ]
     },
@@ -1251,149 +1225,6 @@
       ]
     },
     {
-      "key": "compatibility-testing",
-      "title": "Compatibility testing",
-      "quadrant": "3",
-      "description": "Compatibility testing ensures that software can run on a different configuration, different database, different browsers, and their versions.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Compatibility testing ensures that software can run on a different configuration, different database, different browsers, and their versions."
-        }
-      ]
-    },
-    {
-      "key": "end-to-end-testing-/-system-testing",
-      "title": "End to end testing / system testing",
-      "quadrant": "3",
-      "description": "End-to-End Testing involves testing of a complete application environment in a situation that mimics real-world use, such as interacting with a database, using network communications, or interacting with other hardware, applications, or systems if appropriate.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "End-to-End Testing involves testing of a complete application environment in a situation that mimics real-world use, such as interacting with a database, using network communications, or interacting with other hardware, applications, or systems if appropriate."
-        }
-      ]
-    },
-    {
-      "key": "exploratory-testing",
-      "title": "Exploratory testing",
-      "quadrant": "3",
-      "description": "EXPLORATORY TESTING is a type of software testing where Test cases are not created in advance but testers check system on the fly. They may note down ideas about what to test before test execution. The focus of exploratory testing is more on testing as a \"thinking\" activity.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "EXPLORATORY TESTING is a type of software testing where Test cases are not created in advance but testers check system on the fly. They may note down ideas about what to test before test execution. The focus of exploratory testing is more on testing as a \"thinking\" activity."
-        }
-      ]
-    },
-    {
-      "key": "integration-testing",
-      "title": "Integration testing",
-      "quadrant": "3",
-      "description": "INTEGRATION TESTING is a level of software testing where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. Test drivers and test stubs are used to assist in Integration Testing.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "INTEGRATION TESTING is a level of software testing where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. Test drivers and test stubs are used to assist in Integration Testing."
-        }
-      ]
-    },
-    {
-      "key": "load-testing",
-      "title": "Load Testing",
-      "quadrant": "3",
-      "description": "A load test is type of software testing which is conducted to understand the behavior of the application under a specific expected load. Load testing is performed to determine a system’s behavior under both normal and at peak conditions.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "A load test is type of software testing which is conducted to understand the behavior of the application under a specific expected load. Load testing is performed to determine a system’s behavior under both normal and at peak conditions."
-        }
-      ]
-    },
-    {
-      "key": "localization-testing",
-      "title": "Localization testing",
-      "quadrant": "3",
-      "description": "Localization testing is a software testing technique, that checks that the software behaves according to the local culture or settings(language, currency, time and date..etc).",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Localization testing is a software testing technique, that checks that the software behaves according to the local culture or settings(language, currency, time and date..etc)."
-        }
-      ]
-    },
-    {
-      "key": "regression-testing",
-      "title": "Regression testing",
-      "quadrant": "3",
-      "description": "REGRESSION TESTING is defined as a type of software testing to confirm that a recent program or code change has not adversely affected existing features.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "REGRESSION TESTING is defined as a type of software testing to confirm that a recent program or code change has not adversely affected existing features."
-        }
-      ]
-    },
-    {
-      "key": "smoke-testing",
-      "title": "Smoke testing",
-      "quadrant": "3",
-      "description": "SMOKE TESTING is a type of software testing that determines whether the deployed build is stable or not. The purpose of Smoke Tests it to confirm whether the QA team can proceed with further testing. Smoke tests are a minimal set of tests run on each build.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "SMOKE TESTING is a type of software testing that determines whether the deployed build is stable or not. The purpose of Smoke Tests it to confirm whether the QA team can proceed with further testing. Smoke tests are a minimal set of tests run on each build."
-        }
-      ]
-    },
-    {
-      "key": "stress-testing",
-      "title": "Stress testing",
-      "quadrant": "3",
-      "description": "This testing is done when a system is stressed beyond its specifications in order to check how and when it fails. This is performed under heavy load like putting large number beyond storage capacity, complex database queries, continuous input to the system or database load.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "This testing is done when a system is stressed beyond its specifications in order to check how and when it fails. This is performed under heavy load like putting large number beyond storage capacity, complex database queries, continuous input to the system or database load."
-        }
-      ]
-    },
-    {
-      "key": "user-acceptance-testing",
-      "title": "User Acceptance Testing",
-      "quadrant": "3",
-      "description": "User acceptance testing (UAT) is the last phase of the software testing process. During UAT, actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications. UAT is one of the final and critical software project procedures that must occur before newly developed software is rolled out to the market.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "User acceptance testing (UAT) is the last phase of the software testing process. During UAT, actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications. UAT is one of the final and critical software project procedures that must occur before newly developed software is rolled out to the market."
-        }
-      ]
-    },
-    {
-      "key": "security-testing",
-      "title": "Security testing",
-      "quadrant": "3",
-      "description": "Security Testing is done to check how the software or application or website is secure from internal and external threats. This testing includes how much software is secure from the malicious program, viruses and how secure and strong the authorization and authentication processes are.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Security Testing is done to check how the software or application or website is secure from internal and external threats. This testing includes how much software is secure from the malicious program, viruses and how secure and strong the authorization and authentication processes are."
-        }
-      ]
-    },
-    {
       "key": "backstop.js",
       "title": "Backstop.JS",
       "quadrant": "4",
@@ -1459,19 +1290,6 @@
       ]
     },
     {
-      "key": "lighthouse",
-      "title": "Lighthouse",
-      "quadrant": "4",
-      "description": "Lighthouse is an open-source, automated tool for improving the quality of web pages and it can be found in Chrome DevTools.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Lighthouse is an open-source, automated tool for improving the quality of web pages and it can be found in Chrome DevTools."
-        }
-      ]
-    },
-    {
       "key": "postman",
       "title": "Postman",
       "quadrant": "4",
@@ -1533,19 +1351,6 @@
           "ringId": "adopt",
           "date": "2024-01-01",
           "description": "The Zephyr tool suite gives you integrated quality metrics that deliver real time visibility of your projects development progress and status. This capability stems from our unrivalled integration with Jira and a range of other key development and test products."
-        }
-      ]
-    },
-    {
-      "key": "burp-suite",
-      "title": "Burp Suite",
-      "quadrant": "4",
-      "description": "Burp Intruder is an advanced tool for automating custom attacks against applications.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Burp Intruder is an advanced tool for automating custom attacks against applications."
         }
       ]
     },
@@ -1628,32 +1433,6 @@
       ]
     },
     {
-      "key": "microservices-testing",
-      "title": "Microservices testing",
-      "quadrant": "3",
-      "description": "What is Microservices Testing? A microservices architecture creates an application as a collection of services. Each microservice works independently and uses application programming interfaces (APIs) to communicate with other services. Each microservice has its own data store and is deployed independently.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "What is Microservices Testing? A microservices architecture creates an application as a collection of services. Each microservice works independently and uses application programming interfaces (APIs) to communicate with other services. Each microservice has its own data store and is deployed independently."
-        }
-      ]
-    },
-    {
-      "key": "mobile-app-testing",
-      "title": "Mobile App testing",
-      "quadrant": "3",
-      "description": "Testing mobile specific applications for Android and/or iOS.",
-      "timeline": [
-        {
-          "ringId": "adopt",
-          "date": "2024-01-01",
-          "description": "Testing mobile specific applications for Android and/or iOS."
-        }
-      ]
-    },
-    {
       "key": "c#",
       "title": "C#",
       "quadrant": "1",
@@ -1680,15 +1459,41 @@
       ]
     },
     {
-      "key": "blockchain-testing",
-      "title": "Blockchain testing",
+      "key": "functional-testing",
+      "title": "Functional testing",
       "quadrant": "3",
-      "description": "Blockchain testing is the systematic evaluation of the blockchain's various functional components (e.g., smart contracts). Unlike traditional software testing, blockchain testing involves several components such as blocks, mining, transactions, wallets, and so on, all of which require special tools to test.",
+      "description": "Verify that the software operates according to its specifications, ensuring each function of the application works as intended. Functional testing is crucial for validating the correctness of the application’s behavior. It can be manual or automated, and it ensures that the software meets the requirements and expectations.",
       "timeline": [
         {
           "ringId": "adopt",
           "date": "2024-01-01",
-          "description": "Blockchain testing is the systematic evaluation of the blockchain's various functional components (e.g., smart contracts). Unlike traditional software testing, blockchain testing involves several components such as blocks, mining, transactions, wallets, and so on, all of which require special tools to test."
+          "description": "Verify that the software operates according to its specifications, ensuring each function of the application works as intended. Functional testing is crucial for validating the correctness of the application’s behavior. It can be manual or automated, and it ensures that the software meets the requirements and expectations."
+        }
+      ]
+    },
+    {
+      "key": "automated-testing",
+      "title": "Automated testing",
+      "quadrant": "3",
+      "description": "Automate the execution of tests to increase efficiency, reduce manual effort, and provide quick feedback on code changes. Automated testing spans across various types of testing, including unit, functional, integration, and regression tests. It is essential for continuous integration and continuous delivery (CI/CD) pipelines, allowing for rapid and reliable validation of software. We are using tools like Testcafe, Cypress, Appium for UI tests and PHPUnit, PactumJS and Codeception for functional and API tests",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Automate the execution of tests to increase efficiency, reduce manual effort, and provide quick feedback on code changes. Automated testing spans across various types of testing, including unit, functional, integration, and regression tests. It is essential for continuous integration and continuous delivery (CI/CD) pipelines, allowing for rapid and reliable validation of software. We are using tools like Testcafe, Cypress, Appium for UI tests and PHPUnit, PactumJS and Codeception for functional and API tests"
+        }
+      ]
+    },
+    {
+      "key": "performance-testing",
+      "title": "Performance testing",
+      "quadrant": "3",
+      "description": "Assess the software’s performance under various conditions, including load, stress, and scalability tests, to ensure it meets performance criteria. Performance testing is critical for understanding how an application behaves under expected and peak conditions. It helps in identifying bottlenecks and ensuring that the software can handle the required load without degradation. We are using tools like jMeter, k6 or Taurus to perform stress and load tests",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2024-01-01",
+          "description": "Assess the software’s performance under various conditions, including load, stress, and scalability tests, to ensure it meets performance criteria. Performance testing is critical for understanding how an application behaves under expected and peak conditions. It helps in identifying bottlenecks and ensuring that the software can handle the required load without degradation. We are using tools like jMeter, k6 or Taurus to perform stress and load tests"
         }
       ]
     },
