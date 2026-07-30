@@ -1,6 +1,6 @@
 # Zitec Technology Radar
 
-This repo holds the data sources for Zitec's Technology Radars (adapted by us and based on the original [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar)).
+This repo holds the data sources for Zitec's Technology Radars (based on the original [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar)).
 
 ## Updating the Radars
 
@@ -8,7 +8,7 @@ All you have to do in order to update one of the radars is to find the correspon
 
 Please make sure that the file is not broken by the edits. Although you can check the outcome using the steps in the publishing section below, please also validate the file locally before pushing it to the repo.
 
-## Publishing the Radars
+## Updating the public Tech Radars
 
 Data for each radar is pulled automatically from a public [Zitec GitHub repo](https://github.com/zitec/Zitec-Tech-Radar).
 
@@ -21,7 +21,7 @@ Finally, once the changes are synchornized (it can take up to 5 minutes) check t
 ## Adding a new radar
 
 To add a new radar:
-* Create a new file in [CSV](https://github.com/thoughtworks/build-your-own-radar?tab=readme-ov-file#using-csv-data) or [JSON](https://github.com/thoughtworks/build-your-own-radar?tab=readme-ov-file#using-json-data) format using the linked insturction for the respective format.
+* Create a new file in [CSV](https://github.com/thoughtworks/build-your-own-radar?tab=readme-ov-file#using-csv-data) or [JSON](https://github.com/thoughtworks/build-your-own-radar?tab=readme-ov-file#using-json-data) format using the linked instructions for the respective format.
 * Push the file to the private GitLab repo and wait for it to be synchronized to GitHub.
 * Go to the [Build Your Own Radar page](https://radar.thoughtworks.com/) and insert the URL of the raw file from GitHub (eg: https://raw.githubusercontent.com/zitec/Zitec-Tech-Radar/master/TechRadar.csv)
 * Finally, build the radar, take the resulting URL and share it with any interested party.
