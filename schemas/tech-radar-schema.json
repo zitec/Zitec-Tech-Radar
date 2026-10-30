@@ -48,7 +48,7 @@
               "properties": {
                 "ringId": { 
                   "type": "string",
-                  "enum": ["adopt", "trial", "assess", "hold"]
+                  "enum": ["adopt", "trial", "assess", "caution"]
                 },
                 "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
                 "description": { "type": "string" },

@@ -36,7 +36,8 @@ The current version of the radar unifies the data sources for the Dev and QA rad
 The radar is validated in Gitlab CI to ensure that the JSON file is correctly formatted.
 
 ### Validating the JSON file on your local machine
-To test the JSON file locally, follow these steps:
-* [Install Genie](https://gitlab.zitec.com/research/genie-installer) on your machine (`bash <(curl -fsSL https://zit.ec/genie)`).
-* Execute `gni install` if this is your first time running the project.
-* Execute `gni run validate` to validate the JSON file.
+To test the JSON file locally, make sure [Node.js](https://nodejs.org/) is installed and run this from the root of the repo:
+
+```sh
+npx ajv-cli validate -s schemas/tech-radar-schema.json -d tech-radar.json
+```
