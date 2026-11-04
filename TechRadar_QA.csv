@@ -2,7 +2,7 @@ name,ring,quadrant,isNew,description
 Codeception,adopt,languages & frameworks,FALSE,"Codeception is a multi-featured testing framework for PHP. It can handle unit, functional, and acceptance testing of web applications and it's powered by the already very popular PHPUnit testing framework"
 Cypress,adopt,languages & frameworks,FALSE,Cypress is an automation testing framework for front end. Can be used for end-to-end and component testing and can test anything that runs in a browser.
 JavaScript,adopt,languages & frameworks,FALSE,"JavaScript is a scripting language used to create and control dynamic website content, i.e. anything that moves, refreshes, or otherwise changes on your screen without requiring you to manually reload a web page."
-Laravel Dusk,hold,languages & frameworks,FALSE,"Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation."
+Laravel Dusk,caution,languages & frameworks,FALSE,"Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation."
 PHP,adopt,languages & frameworks,FALSE,PHP is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
 PHPUnit,adopt,languages & frameworks,FALSE,PHPUnit is a programmer-oriented testing framework for PHP.
 Testcafe,adopt,languages & frameworks,FALSE,"TestCafe is a pure node. js end-to-end solution for testing web apps. It takes care of all the stages: starting browsers, running tests, gathering test results and generating reports. TestCafe doesn't need browser plugins - it works in all popular modern browsers out-of-the-box."
@@ -30,12 +30,12 @@ Jmeter,adopt,tools,FALSE,JMeter is used to analyze and measure the performance o
 Lighthouse,adopt,tools,FALSE,"Lighthouse is an open-source, automated tool for improving the quality of web pages and it can be found in Chrome DevTools."
 Postman,adopt,tools,FALSE,Postman is a tool used for testing APIs.
 Taurus,adopt,tools,FALSE,"Taurus is a tool that provides a simple way to create and run performance tests, as well as an easy integration with additional open-source functional and performance testing software, like Selenium, Gatling or JMeter. Taurus uses YAML files, which are very easy to understand."
-Tsung,hold,tools,FALSE,"Tsung is a robust, load-testing tool used to benchmark the performance of instant messaging servers."
+Tsung,caution,tools,FALSE,"Tsung is a robust, load-testing tool used to benchmark the performance of instant messaging servers."
 Xray,adopt,tools,FALSE,"Xray is a complete Test Management tool for Jira. Xray supports the entire testing life cycle: test planning, test design, test execution and test reporting."
 Zephyr,adopt,tools,FALSE,The Zephyr tool suite gives you integrated quality metrics that deliver real time visibility of your projects development progress and status. This capability stems from our unrivalled integration with Jira and a range of other key development and test products.
 Burp Suite,adopt,tools,TRUE,Burp Intruder is an advanced tool for automating custom attacks against applications.
 Jenkins,adopt,tools,FALSE,"Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software."
-Redmine,hold,tools,FALSE,Redmine is a a project tracking tool used for documenting test cases and bug tracking.
+Redmine,caution,tools,FALSE,Redmine is a a project tracking tool used for documenting test cases and bug tracking.
 Kibana,adopt,tools,FALSE,"Kibana is a visual interface tool that allows you to explore, visualize, and build a dashboard of the logs, it is used by QA to troubleshoot various errors."
 k6,adopt,tools,TRUE,k6 is an open source framework built to make performance testing fun for developers. k6 stands out because of its ability to encapsulate usability and performance while also bundling tools like a command-line interface to execute scripts and a dashboard to monitor the test run results
 knex,adopt,tools,TRUE,"Knex.js (pronounced /kəˈnɛks/) is a ""batteries included"" SQL query builder for PostgreSQL, CockroachDB, MSSQL, MySQL, MariaDB, SQLite3, Better-SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use.

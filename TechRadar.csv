@@ -20,10 +20,10 @@ PowerBI,adopt,tools,FALSE,"PowerBI is a business analytics tool that provides in
 GitHub Copilot,adopt,tools,FALSE,"GitHub Copilot is an AI-powered code assistant that promises to automate repetitive code writing tasks, while also being able to generate small blocks of code based on context. Although we feel like using Copilot incurs some extra debugging time, the experience seems to be net positive and we're inclined to recommend its adoption at the company level given the reasonable pricing. Adoption progress documented in internal decision record ZDR-0005."
 Claude Code,trial,tools,TRUE,
 Azure DevOps,trial,tools,FALSE,
-Ansible,hold,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
-AWS Code Deploy,hold,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
-Jenkins,hold,tools,FALSE,
-Gulp,hold,tools,FALSE,"Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development. Will be used for non-bundling tasks."
+Ansible,caution,tools,FALSE,"Ansible's role has been significantly diminished and will no longer be used for config management at the VM level (given that most projects now run on Kubernetes). However, we will keep using Ansible to deploy certain Helm charts inside Kubernetes clusters."
+AWS Code Deploy,caution,tools,FALSE,"Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
+Jenkins,caution,tools,FALSE,
+Gulp,caution,tools,FALSE,"Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development. Will be used for non-bundling tasks."
 Magento 2,adopt,platforms,FALSE,
 Wordpress,adopt,platforms,FALSE,"Wordpress is extremely efficient for building simple content management platforms or corporate websites, so it looks like it will be a long-time presence in our portfolio. However, it will only be used by the digital experience team."
 MySQL,adopt,platforms,FALSE,
@@ -42,16 +42,16 @@ Microsoft Fabric,trial,platforms,TRUE,"Microsoft Fabric is a unified data analyt
 Strapi,trial,platforms,FALSE,
 Snowflake,assess,platforms,TRUE,
 Apache Kafka,assess,platforms,FALSE,
-WooCommerce,hold,platforms,FALSE,
-Docker Swarm,hold,platforms,FALSE,
-Vagrant,hold,platforms,FALSE,"All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
-Drupal 8,hold,platforms,FALSE,"We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dilutes our competitive advantage."
-Blockchain,hold,platforms,FALSE,"While there are some use cases where blockchain technology is a good fit, most projects we encounter don't require or benefit from it. Additionally, given the limited knowledge we have, we will hold off from investing into blockchain-related technologies."
-PrestaShop,hold,platforms,FALSE,"As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it."
-Magento 1.x,hold,platforms,FALSE,"We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible."
-OpenCart,hold,platforms,FALSE,
-Shopify,hold,platforms,FALSE,
-Microsoft Sharepoint,hold,platforms,FALSE,
+WooCommerce,caution,platforms,FALSE,
+Docker Swarm,caution,platforms,FALSE,
+Vagrant,caution,platforms,FALSE,"All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
+Drupal 8,caution,platforms,FALSE,"We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dilutes our competitive advantage."
+Blockchain,caution,platforms,FALSE,"While there are some use cases where blockchain technology is a good fit, most projects we encounter don't require or benefit from it. Additionally, given the limited knowledge we have, we will hold off from investing into blockchain-related technologies."
+PrestaShop,caution,platforms,FALSE,"As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it."
+Magento 1.x,caution,platforms,FALSE,"We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible."
+OpenCart,caution,platforms,FALSE,
+Shopify,caution,platforms,FALSE,
+Microsoft Sharepoint,caution,platforms,FALSE,
 ASP.NET Core 10,adopt,languages & frameworks,FALSE,"ASP.NET Core's portability, containerization support and developer experience make it the most loved back-end web framework according to Stack Overflow's Developer Survey 2022. Going forward, we will try to both start new projects on, as well as upgrade existing projects to ASP.NET Core 6."
 ECMAScript 2017 (ES6),adopt,languages & frameworks,FALSE,
 Symfony 7,adopt,languages & frameworks,TRUE,
@@ -61,18 +61,20 @@ React.js,adopt,languages & frameworks,FALSE,
 PHP 8.x,adopt,languages & frameworks,FALSE,
 Swift,adopt,languages & frameworks,FALSE,
 Kotlin,adopt,languages & frameworks,FALSE,
-LangChain,adopt,languages & frameworks,FALSE,"LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources. It is a promising technology that could significantly reduce the time and effort required to build AI applications and our experience with it so far has been quite positive, but we need to further test it in additional real-world scenarios before making a decision."
+LangChain.js,adopt,languages & frameworks,FALSE,"LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources."
+LangGraph,adopt,languages & frameworks,TRUE,
 Next.JS,adopt,languages & frameworks,FALSE,"Next.JS promises to deliver a more pleasant and efficient developer experience for front-end heavy applications requiring server-side rendering. We will test the framework on a customer project to validate its value proposition, but at first glance it does seem like it would be a major upgrade compared to our existing alternatives."
 TypeScript,adopt,languages & frameworks,FALSE,
 React Admin,adopt,languages & frameworks,FALSE,"React Admin is a React-based framework for building customizable admin panesl. It provides ready-to-use components for common tasks, abstracting away CRUD operations, form validation, and UI customization. This ensures a consistent user experience across different backend technologies. Its high customizability allows for a uniform look and feel across applications, regardless of specific requirements."
+NestJS,adopt,languages & frameworks,TRUE,
 React Native,trial,languages & frameworks,TRUE,
-Nest.js,trial,languages & frameworks,FALSE,
 Laravel,trial,languages & frameworks,FALSE,
-PHP 7.x,hold,languages & frameworks,FALSE,
-Symfony 3 + 4 + 5,hold,languages & frameworks,FALSE,"All our projects should be upgraded to Symfony 6 or 7, as older version of Symfony are not longer supported as of 2026."
-ASP.NET MVC,hold,languages & frameworks,FALSE,"We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
-Django,hold,languages & frameworks,FALSE,
-Python,hold,languages & frameworks,FALSE,"Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
-(ASP).NET Core <10,hold,languages & frameworks,FALSE,"(ASP).NET Core versions <10 have either reached enf of support (<=7) or will reach end of support in November 2026. All projects using these versions of the runtime/framework should upgrade to version 10 as soon as possible."
-Vue.js,hold,languages & frameworks,FALSE,
-Flutter,hold,languages & frameworks,TRUE,"We will focus our efforts on React Native for mobile development, as it seems to have better overlap with our existing front-end web development skills, while also being more popular in the market. Flutter can be used only in cases where React Native is not a good fit."
+Flue,assess,languages & frameworks,TRUE,"Flue is an open-source TypeScript framework for building durable AI agents that can be run locally, in CI, or deployed to Node, Docker, Cloudflare, AWS or Vercel, with any LLM."
+PHP 7.x,caution,languages & frameworks,FALSE,
+Symfony 3 + 4 + 5,caution,languages & frameworks,FALSE,"All our projects should be upgraded to Symfony 6 or 7, as older version of Symfony are not longer supported as of 2026."
+ASP.NET MVC,caution,languages & frameworks,FALSE,"We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
+Django,caution,languages & frameworks,FALSE,
+Python,caution,languages & frameworks,FALSE,"Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
+(ASP).NET Core <10,caution,languages & frameworks,FALSE,"(ASP).NET Core versions <10 have either reached enf of support (<=7) or will reach end of support in November 2026. All projects using these versions of the runtime/framework should upgrade to version 10 as soon as possible."
+Vue.js,caution,languages & frameworks,FALSE,
+Flutter,caution,languages & frameworks,TRUE,"We will focus our efforts on React Native for mobile development, as it seems to have better overlap with our existing front-end web development skills, while also being more popular in the market. Flutter can be used only in cases where React Native is not a good fit."

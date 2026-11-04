@@ -35,8 +35,8 @@
       "color": "#fbdb84"
     },
     {
-      "id": "hold",
-      "name": "HOLD",
+      "id": "caution",
+      "name": "CAUTION",
       "color": "#efafa9"
     }
   ],
@@ -321,7 +321,7 @@
       "description": "Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "Given that we standardized the code deployment process around Kubernetes + GitLab CI or Azure DevOps Pipelines, AWS CodeDeploy is not longer necessary even for AWS-based projects."
         }
@@ -334,7 +334,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -347,7 +347,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -360,7 +360,7 @@
       "description": "Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development.\r\nWill be used for non-bundling tasks.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "Gulp is an open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development. It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development.\r\nWill be used for non-bundling tasks."
         }
@@ -594,7 +594,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -607,7 +607,7 @@
       "description": "All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "All new projects started after Q4 2019 will be using Docker for the local development environment, so Vagrant will be completely retired."
         }
@@ -620,7 +620,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -633,7 +633,7 @@
       "description": "We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dillutes our competitive advantage.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "We decided to stop using Drupal 8, as the developer experience was incompatible with our current team. Furthermore, a lot of projects required simple suite-building, with little or no coding involved, which basically dillutes our competitive advantage."
         }
@@ -646,7 +646,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -659,7 +659,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -672,7 +672,7 @@
       "description": "As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "As our experience with PrestaShop is limited and projects based on the technology are sparse, we decided to give up on it."
         }
@@ -685,7 +685,7 @@
       "description": "We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "We have switched to Magento 2. All new projects will be based on the new versions, while existing projects will have to be upgrade as soon as possible."
         }
@@ -698,7 +698,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -711,7 +711,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -724,7 +724,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -874,11 +874,17 @@
       ]
     },
     {
-      "key": "nest.js",
-      "title": "Nest.js",
+      "key": "nestjs",
+      "title": "NestJS",
       "quadrant": "1",
       "description": "",
       "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2026-10-30",
+          "description": "",
+          "moved": 1
+        },
         {
           "ringId": "trial",
           "date": "2024-01-01",
@@ -913,15 +919,47 @@
       ]
     },
     {
-      "key": "langchain",
-      "title": "LangChain",
+      "key": "flue",
+      "title": "Flue",
       "quadrant": "1",
-      "description": "LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources. It is a promising technology that could significantly reduce the time and effort required to build AI applications and our experience with it so far has been quite positive, but we need to further test it in additional real-world scenarios before making a decision.",
+      "description": "Flue is an open-source TypeScript framework for building durable AI agents that can be run locally, in CI, or deployed to Node, Docker, Cloudflare, AWS or Vercel, with any LLM.",
       "timeline": [
+        {
+          "ringId": "assess",
+          "date": "2026-10-30",
+          "description": "Flue is an open-source TypeScript framework for building durable AI agents that can be run locally, in CI, or deployed to Node, Docker, Cloudflare, AWS or Vercel, with any LLM."
+        }
+      ]
+    },
+    {
+      "key": "langchain.js",
+      "title": "LangChain.js",
+      "quadrant": "1",
+      "description": "LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources.",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2026-10-30",
+          "description": "LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources.",
+          "moved": 1
+        },
         {
           "ringId": "trial",
           "date": "2024-01-01",
           "description": "LangChain is an open-source framework designed to simplify and standardize the creation of end-to-end generative AI applications by integrating with a multitude of large language models (LLMs), vector databases and content sources. It is a promising technology that could significantly reduce the time and effort required to build AI applications and our experience with it so far has been quite positive, but we need to further test it in additional real-world scenarios before making a decision."
+        }
+      ]
+    },
+    {
+      "key": "langgraph",
+      "title": "LangGraph",
+      "quadrant": "1",
+      "description": "",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "date": "2026-10-30",
+          "description": ""
         }
       ]
     },
@@ -958,7 +996,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -971,7 +1009,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -984,7 +1022,7 @@
       "description": "We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "We'll be switching to ASP.NET Core/5 starting with September 2021, as it's a technology that provides significantly better developer experience, as well as compatibility with containerization technologies."
         }
@@ -997,7 +1035,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -1010,7 +1048,7 @@
       "description": "Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "Given the limited knowledge we have, as well as the difficulty experienced in finding new colleagues or customers on this technology, we will scale back our efforts and instead focus on Node.JS as the third back-end web development language in the company."
         }
@@ -1023,7 +1061,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -1036,7 +1074,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -1049,7 +1087,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -1062,7 +1100,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -1075,7 +1113,7 @@
       "description": "ASP.NET Core 5 reached end of support in May 2022, meaning all projects using it or any other previous versions of the framework should upgrade to version 6 as soon as possible.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "ASP.NET Core 5 reached end of support in May 2022, meaning all projects using it or any other previous versions of the framework should upgrade to version 6 as soon as possible."
         }
@@ -1088,7 +1126,7 @@
       "description": "",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": ""
         }
@@ -1140,7 +1178,7 @@
       "description": "Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation."
         }
@@ -1322,7 +1360,7 @@
       "description": "Tsung is a robust, load-testing tool used to benchmark the performance of instant messaging servers.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "Tsung is a robust, load-testing tool used to benchmark the performance of instant messaging servers."
         }
@@ -1374,7 +1412,7 @@
       "description": "Redmine is a a project tracking tool used for documenting test cases and bug tracking.",
       "timeline": [
         {
-          "ringId": "hold",
+          "ringId": "caution",
           "date": "2024-01-01",
           "description": "Redmine is a a project tracking tool used for documenting test cases and bug tracking."
         }
